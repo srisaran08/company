@@ -1,0 +1,45 @@
+<div class="container bg-dark mt-3 rounded" style="width: 800px;">
+  <br>
+  <h2 class="text-light" style="text-align: center;">ABDSS Nursery Plant</h2>
+  <hr>  
+  <button (click)= " goToLogin()" class="btn btn-secondary mb-3" style=" margin-left: 90%;">Logout</button>
+  <div class="card">
+    <div class="card-body">
+<h3>Create Planter </h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+   <div class="divScroll">
+    <div class="form-group">
+        <label for="name">Planter Stock</label>
+        <input type="text" class="form-control" id="planterStock" required [(ngModel)]="planter.planterStock" name="planterStock">
+      </div>
+      <div class="form-group">
+        <label for="name">Planter Cost</label>
+        <input type="text" class="form-control" id="planterCost" required [(ngModel)]="planter.planterCost" name="planterCost">
+      </div>
+      <div class="form-group">
+        <label for="name">Planter Height</label>
+        <input type="text" class="form-control" id="planterHeight" required [(ngModel)]="planter.planterHeight" name="planterHeight">
+      </div>
+      <div class="form-group">
+        <label for="name">Planter Holes</label>
+        <input type="text" class="form-control" id="planterHoles" required [(ngModel)]="planter.planterHoles" name="planterHoles">
+      </div>
+      <div class="form-group">
+        <label for="name">Planter Shape</label>
+        <input type="text" class="form-control" id="planterShape" required [(ngModel)]="planter.planterShape" name="planterShape">
+      </div>
+      <div class="form-group">
+        <label for="name">Planter Capacity</label>
+        <input type="text" class="form-control" id="planterCapacity" required [(ngModel)]="planter.planterCapacity" name="planterCapacity">
+      </div>
+      <button type="submit" class="btn text-light bg-dark" style="margin-top: 10px;">Add</button></div>
+</form>
+</div>
+<div [hidden]="!submitted">
+  <h4>You submitted successfully!</h4>
+  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
+</div>
+    </div>
+  </div>
+</div>

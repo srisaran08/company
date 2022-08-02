@@ -1,0 +1,49 @@
+<div class="container bg-dark mt-3 rounded" style="width: 800px;">
+  <br>
+  <h2 class="text-light" style="text-align: center;">ABDSS Nursery Plant</h2>
+  <hr>  
+  <button (click)= " goToLogin()" class="btn btn-secondary mb-3" style=" margin-left: 90%;">Logout</button>
+  <div class="card">
+    <div class="card-body">
+<h2>Plant Details</h2> 
+<hr/>
+<div *ngIf="plant">
+  <div>
+    <label><b>Plant Name: </b></label> {{plant.commonname}}
+  </div>
+  <div>
+    <label><b>Plant Type: </b></label> {{plant.typeOfPlant}}
+  </div>
+  <div>
+    <label><b>Plant Description: </b></label> {{plant.description}}
+  </div>
+  <div>
+    <label><b>Plant Stock: </b></label> {{plant.plantStock}}
+  </div>
+  <div>
+    <label><b>Blooming Time (IN DAYS):</b></label> {{plant.bloomTime}}
+  </div>
+  <div>
+    <label><b>Uses:</b></label> {{plant.medicinalOrCulinaryUse}}
+  </div>
+  <div>
+    <label><b>Difficulty Level:</b></label> {{plant.difficultyLevel}}
+  </div>
+  <div>
+    <label><b>Number of Seeds per packet:</b></label> {{plant.typeOfPlant}}
+  </div>
+  <div>
+    <label><b>Optimal Temperature:</b></label> {{plant.temperature}}
+  </div>
+  <div>
+    <label><b>Plant Cost</b></label> {{plant.plantCost}}
+  </div>
+   
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn bg-dark text-light">Back to Plant List</button><br>
+    </div>
+  </div>
+</div>

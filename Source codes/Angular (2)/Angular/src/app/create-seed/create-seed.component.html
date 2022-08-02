@@ -1,0 +1,62 @@
+<div class="container bg-dark mt-3 rounded" style="width: 800px;">
+  <br>
+  <h2 class="text-light" style="text-align: center;">ABDSS Nursery Plant</h2>
+  <hr>  
+  <button (click)= " goToLogin()" class="btn btn-secondary mb-3" style=" margin-left: 90%;">Logout</button>
+  <div class="card">
+    <div class="card-body">
+<h3>Create Seed </h3>
+<div>
+  <form (ngSubmit)="onSubmit()" style="width: 700px;">
+   <div>
+    <div class="form-group">
+      <label for="name">Seed Name</label>
+      <input type="text" class="form-control" id="commonName" required [(ngModel)]="seed.commonName" name= "commonName">
+    </div>
+    <div class="form-group">
+      <label for="name">Seed Type</label>
+      <input type="text" class="form-control" id="typeOfSeeds" required [(ngModel)]="seed.typeOfSeeds" name="typeOfSeeds">
+    </div>
+    <div class="form-group">
+        <label for="name">Seed Description</label>
+        <input type="text" class="form-control" id="seedsDescription" required [(ngModel)]="seed.seedsDescription" name="seedsDescription">
+      </div>
+      <div class="form-group">
+        <label for="name">Seed Stock</label>
+        <input type="text" class="form-control" id="seedsStock" required [(ngModel)]="seed.seedsStock" name="seedsStock">
+      </div>
+      <div class="form-group">
+        <label for="name">Seed Cost</label>
+        <input type="text" class="form-control" id="seedsCost" required [(ngModel)]="seed.seedsCost" name="seedsCost">
+      </div>
+      <div class="form-group">
+        <label for="name">Seed bloomTime</label>
+        <input type="text" class="form-control" id="bloomTime" required [(ngModel)]="seed.bloomTime" name="bloomTime">
+      </div>
+      <div class="form-group">
+        <label for="name">Seed Watering</label>
+        <input type="text" class="form-control" id="watering" required [(ngModel)]="seed.watering" name="watering">
+      </div>
+      <div class="form-group">
+        <label for="name">Seed Difficulty Level</label>
+        <input type="text" class="form-control" id="difficultyLevel" required [(ngModel)]="seed.difficultyLevel" name="difficultyLevel">
+      </div>
+      <div class="form-group">
+        <label for="name">Seed per packet</label>
+        <input type="text" class="form-control" id="seedsPerPacket" required [(ngModel)]="seed.seedsPerPacket" name="seedsPerPacket">
+      </div>
+      <div class="form-group">
+        <label for="name">Temperature</label>
+        <input type="text" class="form-control" id="temperature" required [(ngModel)]="seed.temperature" name="temperature">
+      </div>
+    
+      <button type="submit" class="btn bg-dark text-light" style="margin-top: 10px;">Add</button></div>
+
+  </form>
+  <button (click)="go()" class="btn mt-3 text-light bg-dark">Go to Home Page</button>
+</div>
+
+    </div>
+  </div>
+</div>
+

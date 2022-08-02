@@ -1,0 +1,74 @@
+
+   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Links -->
+    
+    <ul class="navbar-nav me-auto">
+     
+     
+      <li class="nav-item">
+        <a routerLink="home" class="nav-link" routerLinkActive="active">Home</a>
+    </li>
+      <!-- <li class="nav-item">
+          <a routerLink="customers" class="nav-link" routerLinkActive="active">Customer List</a>
+      </li> -->
+      <li class="nav-item">
+        <a routerLink="about" class="nav-link" routerLinkActive="active">About Us</a>
+    </li>
+      
+      
+   
+    </ul> 
+  </nav>
+  
+  <div class="container bg-dark mt-3 rounded">
+    <br>
+    <h2 class="text-light" style="text-align: center;">ABDSS Nursery Plant</h2>
+    <hr>  
+    <button (click)= " goToLogin()" class="btn btn-secondary mb-3" style=" margin-left: 94%;">Logout</button>
+    <div class="card">
+      <div class="card-body">
+   
+    
+<h2>Seed Details</h2> 
+<hr/>
+<div *ngIf="seed">
+  <div>
+    <label><b>Seed Id: </b></label> {{seed.seedId}}
+  </div>
+  <div>
+    <label><b>Seed Name: </b></label> {{seed.commonName}}
+  </div>
+  <div>
+    <label><b>Seed Description: </b></label> {{seed.seedsDescription}}
+  </div>
+  <div>
+    <label><b>Seed Temperature: </b></label> {{seed.temperature}}
+  </div>
+  <div>
+    <label><b>Seed Cost: </b></label> Rs.{{seed.seedsCost}}
+  </div>
+  <div>
+    <label><b>Seed Type: </b></label> {{seed.typeOfSeeds}}
+  </div>
+  <div>
+    <label><b>Seed Bloomtime: </b></label> {{seed.bloomTime}}
+    
+  </div>
+  <div>
+    <label><b>Seed Watering: </b></label> {{seed.watering}}
+  </div>
+  <div>
+    <label><b>Seed Difficulty Level: </b></label> {{seed.difficultyLevel}}
+  </div>
+  <div>
+    <label><b>Seed Seed per Packet: </b></label> {{seed.seedsPerPacket}}
+  </div>
+  <div>
+    <button (click)="cartSeed(seed.seedId)" class="btn mt-3 text-light bg-dark">Add To Cart</button><button (click)="go()" style="margin-left: 76%;" class="btn mt-3 text-light bg-dark">Go back to Home Page</button>
+  </div>
+ 
+   
+</div>
+    </div>
+    </div>
+  </div>

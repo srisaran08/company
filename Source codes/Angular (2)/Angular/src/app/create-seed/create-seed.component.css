@@ -1,0 +1,7 @@
+.divScroll{
+
+    overflow : scroll;
+    height: fit-content;
+    width: fit-content;
+
+}

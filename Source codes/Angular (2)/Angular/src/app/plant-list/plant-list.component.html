@@ -1,0 +1,37 @@
+<div class="container bg-dark mt-3 rounded">
+  <br>
+  <h2 class="text-light" style="text-align: center;">ABDSS Nursery Plant</h2>
+  <hr>  
+  <button (click)= " goToLogin()" class="btn btn-secondary mb-3" style=" margin-left: 94%;">Logout</button>
+  <div class="card">
+    <div class="card-body">
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Plant List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Plant Id</th>
+            <th>Plant Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let plant of plants | async">
+              <td>{{plant.plantId}}</td>
+              <td>{{plant.commonname}}</td>
+              <td><button (click)="deletePlant(plant.plantId)" class="btn bg-dark text-light">Delete</button>
+                <button (click)="updatePlant(plant.plantId)" class="btn bg-dark text-light" style="margin-left: 10px">Update</button>
+                <button (click)="plantDetails(plant.plantId)" class="btn bg-dark text-light" style="margin-left: 10px">Details</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button (click)="go()" class="btn mt-3 text-light bg-dark">Go to Home Page</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

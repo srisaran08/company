@@ -1,0 +1,59 @@
+<div class="container bg-dark mt-3 rounded" style="width: 800px;">
+  <br>
+  <h2 class="text-light" style="text-align: center;">ABDSS Nursery Plant</h2>
+  <hr>  
+  <button (click)= " goToLogin()" class="btn btn-secondary mb-3" style=" margin-left: 90%;">Logout</button>
+  <div class="card">
+    <div class="card-body">
+<h3>Update Plant</h3>
+<div style="width: 400px;">
+  <form (ngSubmit)="onSubmit()" style="width: 700px;">
+    <div class="form-group">
+        <label for="name">Plant Cost</label>
+        <input type="text" class="form-control" id="plantCost" required [(ngModel)]="plant.plantCost" name= "plantCost">
+      </div>
+      <div class="form-group">
+        <label for="name">Plant Height</label>
+        <input type="text" class="form-control" id="plantHeight" required [(ngModel)]="plant.plantHeight" name="plantHeight">
+      </div>
+      <div class="form-group">
+          <label for="name">plant survival Temperature</label>
+          <input type="text" class="form-control" id="temperature" required [(ngModel)]="plant.temperature" name="temperature">
+        </div>
+        <div class="form-group">
+          <label for="name">Plant Spread</label>
+          <input type="text" class="form-control" id="plantSpread" required [(ngModel)]="plant.plantSpread" name="plantSpread">
+        </div>
+        <div class="form-group">
+          <label for="name">Plant Name</label>
+          <input type="text" class="form-control" id="commonname" required [(ngModel)]="plant.commonname" name="commonname">
+        </div>
+        <div class="form-group">
+          <label for="name">Plant bloomTime</label>
+          <input type="text" class="form-control" id="bloomTime" required [(ngModel)]="plant.bloomTime" name="bloomTime">
+        </div>
+        <div class="form-group">
+          <label for="name">Uses</label>
+          <input type="text" class="form-control" id="medicinalOrCulinaryUse" required [(ngModel)]="plant.medicinalOrCulinaryUse" name="medicinalOrCulinaryUse">
+        </div>
+        <div class="form-group">
+          <label for="name">Plant Difficulty Level</label>
+          <input type="text" class="form-control" id="difficultyLevel" required [(ngModel)]="plant.difficultyLevel" name="difficultyLevel">
+        </div>
+        <div class="form-group">
+          <label for="name">Plant Type</label>
+          <input type="text" class="form-control" id="typeOfPlant" required [(ngModel)]="plant.typeOfPlant" name="typeOfPlant">
+        </div>
+        <div class="form-group">
+          <label for="name">Plant Stock</label>
+          <input type="text" class="form-control" id="plantStock" required [(ngModel)]="plant.plantStock" name="plantStock">
+        </div>
+
+    <button type="submit" class="btn text-light bg-dark" style="margin-top: 10px;">Update</button>
+   
+  </form>
+  <button (click)="go()" class="btn mt-3 text-light bg-dark">Go to Home Page</button>
+</div>
+    </div>
+  </div>
+</div>

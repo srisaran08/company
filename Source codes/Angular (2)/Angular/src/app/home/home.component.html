@@ -1,0 +1,129 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Links -->
+  
+  <ul class="navbar-nav me-auto">
+   
+   
+    <li class="nav-item">
+      <a routerLink="home" class="nav-link" routerLinkActive="active">Home</a>
+  </li>
+    <!-- <li class="nav-item">
+        <a routerLink="customers" class="nav-link" routerLinkActive="active">Customer List</a>
+    </li> -->
+    <li class="nav-item">
+      <a routerLink="about" class="nav-link" routerLinkActive="active">About Us</a>
+  </li>
+    
+   
+  
+ 
+  </ul> 
+</nav>
+
+<div class="container bg-dark mt-3 rounded">
+  <br>
+  <h2 class="text-light" style="text-align: center;">ABDSS Nursery Plant</h2>
+ 
+  <hr>  
+  <button (click)= " goToLogin()" class="btn btn-secondary mb-3" style=" margin-left: 94%;">Logout</button>
+  <div class="card">
+      
+    <div class="card-body">
+ 
+      
+      <div class="container">
+       
+        <div class="title"><h3>Plants</h3></div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="row-cols-1">
+                  
+                  <div   class="card border border-3 border-dark" style="width: 20rem; ">
+                      <img src="../../assets/a1.jpg" height="200" class="card-img-top" alt="...">
+                      <div  class="card-body">
+                        <h4 class="card-text" style="text-align: center;">Hello this is plant One. Nice to meet you.</h4>
+          
+                        <div  class="text-center">
+                          <button (click)="buyPlant(48)" type="button" class="btn text-light bg-dark" >Buy</button>
+                        </div>
+                      </div>
+                      
+                    </div>
+              </div>
+              <div class="row-cols-2">
+                  
+                  <div class="card border border-3 border-dark" style="width: 20rem;">
+                      <img src="../../assets/a2.jpg" height="200" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-text" style="text-align: center;">Hello this is plant Two. Nice to meet you.</h4>
+                       
+                        <div class="text-center">
+                          <button  (click)="buyPlant(49)" type="button" class="btn text-light bg-dark" >Buy</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="row-cols-3" >
+                  
+                  <div  class="card border border-3 border-dark" style="width: 20rem;">
+                      <img src="../../assets/a3.jpg" height="200" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-text" style="text-align: center;">Hello this is plant Three. Nice to meet you.</h4>
+                         <div class="text-center">
+                          <button  (click)="buyPlant(50)" type="button" class="btn text-light bg-dark" >Buy</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+             
+          </div>
+      <div class="container">
+  
+          <div class="title" style="margin-top: 20px;"><h3>Seeds</h3></div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="row-cols-1">
+                  
+                  <div  class="card border border-3 border-dark" style="width: 20rem;">
+                      <img src="../../assets/b1.jpg" height="200" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-text" style="text-align: center;">Chia Seeds - 100 gms - Gramiyum Seeds</h4>
+          
+                        <div class="text-center">
+                          <button  (click)="buySeed(57)" type="button" class="btn  text-light bg-dark" >Buy</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="row-cols-2">
+                  
+                  <div  class="card border border-3 border-dark" style="width: 20rem;">
+                      <img src="../../assets/b2.jpg" height="200" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-text" style="text-align: center;">Quinoa Offers from Peru - Tridge Seeds</h4>
+                       
+                        <div class="text-center">
+                          <button  (click)="buySeed(56)" type="button" class="btn text-light bg-dark" >Buy</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              <div class="row-cols-3" >
+                  
+                  <div  class="card border border-3 border-dark" style="width: 20rem;">
+                      <img src="../../assets/b3.jpg" height="200" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h4 class="card-text" style="text-align: center;">OliveNation Puffed Quinoa 16 Ounces Seeds</h4>
+                         <div class="text-center">
+                          <button  (click)="buySeed(58)" type="button" class="btn  text-light bg-dark" >Buy</button>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+             
+          </div>
+          
+      </div>
+ 
+      </div>
+    </div>
+  </div>
+   
